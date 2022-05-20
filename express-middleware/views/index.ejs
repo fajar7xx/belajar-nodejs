@@ -1,0 +1,19 @@
+    <h1 class="text-center">Welcome to my site</h1>
+    <h2 class="text-center">Halo <%= name %> </h2>
+
+    <h4>Student lists</h4>
+
+    <% 
+            if (students.length >= 1){
+                students.forEach(student => { 
+        %>
+    <ul>
+        <li>Name: <%= student.name %> </li>
+        <li>Email: <%= student.email %> </li>
+    </ul>
+    <% 
+                })
+            } else {
+        %>
+    <p>Data tidak ada</p>
+    <% } %>
